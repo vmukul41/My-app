@@ -1,0 +1,3 @@
+flask
+MySQL
+flask-mysqldb
