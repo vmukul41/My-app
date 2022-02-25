@@ -1,0 +1,21 @@
+# Default values for 100ms.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: mukul30/flask-app
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: v1
+
+container:
+  containerPort: 8000
+
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8000
+
+

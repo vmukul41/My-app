@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-svc
+  namespace: {{ .Release.Namespace |  default "default" }}
+spec:
+  ports:
+  - port: {{ .Values.service.port }}
+  selector:
+    app: {{ .Release.Name }}
+  clusterIP: None

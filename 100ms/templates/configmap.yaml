@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  DB_HOST: mysql-svc.{{ .Release.Namespace |  default "default" }}.svc.cluster.local
+  DB_DATABASE: 100ms
+  
+kind: ConfigMap
+metadata:
+  annotations:
+  name: {{ .Release.Name }}-configmap
+  namespace: {{ .Release.Namespace |  default "default" }}
