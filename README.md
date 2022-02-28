@@ -1,5 +1,5 @@
 Hi Team,
-Please follow these setup to create a simple app using helm written in flask which connect's to mysql database and can be seen on 
+Please follow these setup to create a simple app using helm written in flask which connect's to mysql database and can be seen over http
 
 Prerequists:
 - docker
